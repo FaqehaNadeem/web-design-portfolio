@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Faqeha Nadeem Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'IBM Plex Mono', monospace;
+      background: #f8f8f8;
+      color: #333;
+    }
+
+    .hero {
+      padding: 4rem 2rem;
+      text-align: center;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    @media (min-width: 600px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 900px) {
+      .grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .card {
+      border: 1px solid #aaa;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .card-content {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .card-title {
+      font-size: 1.1rem;
+      margin: 0 0 0.5rem 0;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .card-description {
+      font-size: 0.95rem;
+      margin: 0.5rem 0;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #ccc;
+      height: 120px;
+      overflow: hidden;
+    }
+
+    .visit-button {
+      margin-top: auto;
+      padding: 0.5rem 1rem;
+      border: 1px solid #333;
+      background: transparent;
+      text-align: center;
+      text-decoration: none;
+      color: #000;
+      display: inline-block;
+      font-size: 0.9rem;
+      align-self: flex-start;
+      transition: all 0.3s ease;
+    }
+
+    .visit-button:hover {
+        background: #000;
+        color: #fff;
+    }
+
+        .footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    color: #666;
+    border-top: 1px solid #ccc;
+    margin-top: 4rem;
+    }
+
+
+    /* Limit entire grid to 50% of screen width on large screens */
+    @media (min-width: 1200px) {
+      .grid {
+        max-width: 50vw;
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1>Faqeha Nadeem</h1>
+    <p>Creative web designer crafting minimal, expressive digital spaces.</p>
+  </div>
+
+  <div class="container">
+    <div class="grid">
+      <div class="card">
+        <img src="curio.png" alt="Project 1">
+        <div class="card-content">
+          <div class="card-title">Café Website</div>
+          <div class="card-description">A single-page responsive website designed for a cozy neighborhood café. Built with HTML, CSS Grid, and subtle scroll-based interactions to bring warmth and charm to the user experience.</div>
+          <a class="visit-button" href="#">Visit Website</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="image.jpg" alt="Project 2">
+        <div class="card-content">
+          <div class="card-title">SaaS Landing Page</div>
+          <div class="card-description">A clean, minimal landing page for a productivity-focused SaaS product. Designed with pastel hues and vintage Mac-inspired flat style. Includes sections for features, testimonials, and pricing tiers.</div>
+          <a class="visit-button" href="#">Visit Website</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="image.jpg" alt="Project 3">
+        <div class="card-content">
+          <div class="card-title">Personal Blog</div>
+          <div class="card-description">A minimalist, text-heavy blog layout optimized for typography. Includes animated section reveals and a beautiful serif/sans-serif font pairing with soft pastel background tones for reading comfort.</div>
+          <a class="visit-button" href="#">Visit Website</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="image.jpg" alt="Project 4">
+        <div class="card-content">
+          <div class="card-title">Newsletter Site</div>
+          <div class="card-description">A simple and effective subscription site for a creative newsletter. Emphasizes large type, line dividers, and playful hover states while maintaining a grid-based, balanced layout.</div>
+          <a class="visit-button" href="#">Visit Website</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="image.jpg" alt="Project 5">
+        <div class="card-content">
+          <div class="card-title">Astronomy Magazine</div>
+          <div class="card-description">An experimental layout for a digital astronomy zine. Designed with typographic rhythm, dark mode, and microinteractions for navigating articles, contributors, and archived issues.</div>
+          <a class="visit-button" href="#">Visit Website</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+  <footer class="footer">
+    <p>&copy; 2025 Faqeha Nadeem — Design & Code</p>
+  </footer>
+</html>
